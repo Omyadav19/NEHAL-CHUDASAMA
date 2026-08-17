@@ -68,7 +68,7 @@ export function renderAbout(container) {
   </section>
 
   <!-- FACTS BAR -->
-  <section style="padding:var(--space-xl) 0;background:var(--clr-white);" aria-label="Key facts">
+  <section style="padding:0 0 var(--space-xl) 0;background:var(--clr-white);" aria-label="Key facts">
     <div class="container">
       <span class="eyebrow reveal" style="text-align:center;display:block;margin-bottom:0.75rem;">BY THE FACTS</span>
       <span class="gold-line gold-line--center reveal"></span>
@@ -120,7 +120,7 @@ export function renderAbout(container) {
           </div>
         </div>
         <div class="about-editorial-text">
-          <span class="section-num reveal">01</span>
+          <span class="section-num reveal">02</span>
           <h2 class="display-3 reveal" style="margin-bottom:1.5rem;color:var(--clr-dark);">
             FROM MUMBAI<br>TO THE WORLD.
           </h2>
@@ -163,7 +163,7 @@ export function renderAbout(container) {
     <div class="container">
       <div class="about-editorial-inner">
         <div>
-          <span class="section-num reveal">02</span>
+          <span class="section-num reveal">03</span>
           <h2 class="display-3 reveal" style="margin-bottom:1.5rem;color:var(--clr-dark);">
             FEARLESS.<br>DETERMINED.<br>AUTHENTIC.
           </h2>

@@ -337,8 +337,8 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .nav-links a:hover,
 .nav-links a.active { color: var(--clr-dark); }
 
-.nav-links a:hover::after,
-.nav-links a.active::after { width: 100%; }
+.nav-links a:hover::after { width: 100%; }
+.nav-links a.active::after { width: 100%; transition: none; }
 
 /* Hamburger */
 .nav-hamburger {

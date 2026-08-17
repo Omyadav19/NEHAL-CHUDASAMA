@@ -7,30 +7,27 @@ import { initScrollAnimations, killScrollTriggers } from '../animations.js';
 import { updateActiveLink } from '../nav.js';
 
 const galleryItems = [
-  { src: '/images/nehal-editorial-7.jpg',  alt: 'Nehal Chudasama — Editorial portrait',            category: 'editorial',      title: 'Editorial Portrait' },
-  { src: '/images/nehal-editorial-1.jpg',  alt: 'Nehal Chudasama — Miss Diva Universe 2018',      category: 'pageant',        title: 'Miss Diva 2018' },
-  { src: '/images/nehal-editorial-9.jpg',  alt: 'Nehal Chudasama — Haute Couture look',           category: 'fashion',        title: 'Couture Fashion' },
-  { src: '/images/nehal-editorial-2.jpg',  alt: 'Nehal Chudasama — Red Carpet glamour',          category: 'red-carpet',     title: 'Red Carpet Glamour' },
-  { src: '/images/nehal-editorial-3.jpg',  alt: 'Nehal Chudasama — High Fashion photoshoot',      category: 'fashion',        title: 'Fashion Statement' },
-  { src: '/images/nehal-editorial-4.jpg',  alt: 'Nehal Chudasama — Spotlight appearance',         category: 'pageant',        title: 'Spotlight' },
-  { src: '/images/nehal-editorial-10.jpg', alt: 'Nehal Chudasama — Beauty portrait',              category: 'editorial',      title: 'Beauty Editorial' },
-  { src: '/images/nehal-editorial-5.jpg',  alt: 'Nehal Chudasama — Behind the scenes moments',    category: 'behind-scenes',  title: 'Behind The Scenes' },
-  { src: '/images/nehal-editorial-8.jpg',  alt: 'Nehal Chudasama — Reality & media event',        category: 'reality',        title: 'Media Appearance' },
-  { src: '/images/nehal-editorial-6.jpg',  alt: 'Nehal Chudasama — Lifestyle editorial',          category: 'lifestyle',      title: 'Lifestyle Moments' },
-  { src: '/images/nehal-editorial-11.png', alt: 'Nehal Chudasama — Miss Diva Red Carpet',         category: 'red-carpet',     title: 'Miss Diva Red Carpet' },
-  { src: '/images/nehal-editorial-12.jpg', alt: 'Nehal Chudasama — Coronation Ceremony',           category: 'pageant',        title: 'Coronation Ceremony' },
-  { src: '/images/nehal-editorial-13.png', alt: 'Nehal Chudasama — Miss Universe Portrait',       category: 'pageant',        title: 'Miss Universe Portrait' },
+  { src: '/images/nehal-editorial-7.jpg', alt: 'Nehal Chudasama — Editorial portrait', category: 'editorial', title: 'Editorial Portrait' },
+  { src: '/images/nehal-editorial-1.jpg', alt: 'Nehal Chudasama — Miss Diva Universe 2018', category: 'pageant', title: 'Miss Diva 2018' },
+  { src: '/images/nehal-editorial-9.jpg', alt: 'Nehal Chudasama — Haute Couture look', category: 'fashion', title: 'Couture Fashion' },
+  { src: '/images/nehal-editorial-3.jpg', alt: 'Nehal Chudasama — High Fashion photoshoot', category: 'fashion', title: 'Fashion Statement' },
+  { src: '/images/nehal-editorial-4.jpg', alt: 'Nehal Chudasama — Spotlight appearance', category: 'pageant', title: 'Spotlight' },
+  { src: '/images/nehal-editorial-10.jpg', alt: 'Nehal Chudasama — Beauty portrait', category: 'editorial', title: 'Beauty Editorial' },
+  { src: '/images/nehal-editorial-5.jpg', alt: 'Nehal Chudasama — Behind the scenes moments', category: 'behind-scenes', title: 'Behind The Scenes' },
+  { src: '/images/nehal-editorial-6.jpg', alt: 'Nehal Chudasama — Lifestyle editorial', category: 'lifestyle', title: 'Lifestyle Moments' },
+  { src: '/images/image-12.jpg', alt: 'Nehal Chudasama — Coronation Ceremony', category: 'pageant', title: 'Coronation Ceremony' },
+  { src: '/images/nehal-editorial-13.png', alt: 'Nehal Chudasama — Miss Universe Portrait', category: 'pageant', title: 'Miss Universe Portrait' },
 ];
 
 const categories = [
-  { key: 'all',          label: 'ALL' },
-  { key: 'editorial',    label: 'EDITORIAL' },
-  { key: 'fashion',      label: 'FASHION' },
-  { key: 'pageant',      label: 'PAGEANT' },
-  { key: 'red-carpet',   label: 'RED CARPET' },
-  { key: 'reality',      label: 'REALITY' },
-  { key: 'behind-scenes',label: 'BEHIND THE SCENES' },
-  { key: 'lifestyle',    label: 'LIFESTYLE' },
+  { key: 'all', label: 'ALL' },
+  { key: 'editorial', label: 'EDITORIAL' },
+  { key: 'fashion', label: 'FASHION' },
+  { key: 'pageant', label: 'PAGEANT' },
+  { key: 'red-carpet', label: 'RED CARPET' },
+  { key: 'reality', label: 'REALITY' },
+  { key: 'behind-scenes', label: 'BEHIND THE SCENES' },
+  { key: 'lifestyle', label: 'LIFESTYLE' },
 ];
 
 export function renderGallery(container) {
