@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO -->
+    <title>Nehal Chudasama | Actor · Model · Entertainment Personality</title>
+    <meta name="description" content="Explore Nehal Chudasama's cinematic portfolio, pageant journey, fashion imagery, entertainment profile and press features." />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Nehal Chudasama | Actor · Model · Entertainment Personality" />
+    <meta property="og:description" content="Miss Diva Universe 2018 · Miss Universe 2018 · Actor · Model · Entertainment Personality" />
+    <meta property="og:image" content="/images/nehal-closeup.jpg" />
+
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js" defer></script>
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  </head>
+  <body>
+
+    <!-- NAVIGATION (6 items — no Contact, no Showreel) -->
+    <nav id="site-nav" role="navigation" aria-label="Main navigation">
+      <div class="nav-inner">
+        <a href="/" class="nav-wordmark" data-link aria-label="Nehal Chudasama — Home">NEHAL</a>
+        <ul class="nav-links" role="list">
+          <li><a href="/about"   data-link>ABOUT</a></li>
+          <li><a href="/journey" data-link>JOURNEY</a></li>
+          <li><a href="/reality" data-link>REALITY</a></li>
+          <li><a href="/gallery" data-link>GALLERY</a></li>
+          <li><a href="/press"   data-link>PRESS</a></li>
+        </ul>
+        <button class="nav-hamburger" id="nav-toggle" aria-expanded="false" aria-controls="nav-mobile-menu" aria-label="Open navigation menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- MOBILE NAVIGATION -->
+    <div class="nav-mobile" id="nav-mobile-menu" aria-hidden="true" role="dialog" aria-label="Mobile navigation">
+      <button class="nav-mobile-close" id="nav-mobile-close" aria-label="Close navigation menu">✕</button>
+      <ul class="nav-mobile-links" role="list">
+        <li><a href="/"        data-link data-mobile-link>HOME</a></li>
+        <li><a href="/about"   data-link data-mobile-link>ABOUT</a></li>
+        <li><a href="/journey" data-link data-mobile-link>JOURNEY</a></li>
+        <li><a href="/reality" data-link data-mobile-link>REALITY</a></li>
+        <li><a href="/gallery" data-link data-mobile-link>GALLERY</a></li>
+        <li><a href="/press"   data-link data-mobile-link>PRESS</a></li>
+      </ul>
+      <p class="nav-mobile-tagline">NEHAL CHUDASAMA</p>
+    </div>
+
+    <!-- PAGE TRANSITION CURTAIN -->
+    <div class="page-curtain" id="page-curtain" aria-hidden="true"></div>
+
+    <!-- APP MOUNT -->
+    <main id="app" role="main"></main>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

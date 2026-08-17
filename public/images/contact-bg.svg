@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000">
+  <rect width="800" height="1000" fill="#0d0d0d"/>
+  <!-- Subtle grid -->
+  <line x1="0" y1="500" x2="800" y2="500" stroke="rgba(244,237,224,0.15)" stroke-width="0.5"/>
+  <line x1="400" y1="0" x2="400" y2="1000" stroke="rgba(244,237,224,0.15)" stroke-width="0.5"/>
+  <!-- Corner marks -->
+  <line x1="40" y1="40" x2="80" y2="40" stroke="#c9a96e" stroke-width="0.8" opacity="0.6"/>
+  <line x1="40" y1="40" x2="40" y2="80" stroke="#c9a96e" stroke-width="0.8" opacity="0.6"/>
+  <line x1="760" y1="40" x2="720" y2="40" stroke="#c9a96e" stroke-width="0.8" opacity="0.6"/>
+  <line x1="760" y1="40" x2="760" y2="80" stroke="#c9a96e" stroke-width="0.8" opacity="0.6"/>
+  <line x1="40" y1="960" x2="80" y2="960" stroke="#c9a96e" stroke-width="0.8" opacity="0.6"/>
+  <line x1="40" y1="960" x2="40" y2="920" stroke="#c9a96e" stroke-width="0.8" opacity="0.6"/>
+  <line x1="760" y1="960" x2="720" y2="960" stroke="#c9a96e" stroke-width="0.8" opacity="0.6"/>
+  <line x1="760" y1="960" x2="760" y2="920" stroke="#c9a96e" stroke-width="0.8" opacity="0.6"/>
+  <!-- Central line -->
+  <line x1="360" y1="500" x2="440" y2="500" stroke="#c9a96e" stroke-width="1" opacity="0.8"/>
+  <!-- Label -->
+  
+  <!-- Replace notice -->
+  <text x="400" y="560" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="rgba(244,237,224,0.15)" opacity="0.8" letter-spacing="2">REPLACE WITH APPROVED PHOTOGRAPHY</text>
+</svg>
