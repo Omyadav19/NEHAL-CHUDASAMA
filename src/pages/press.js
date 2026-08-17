@@ -29,7 +29,7 @@ const pressItems = [
     date: '2018',
     headline: 'Nehal Chudasama Captivates on the Global Stage at Miss Universe 2018',
     summary: 'India\'s Miss Universe representative Nehal Chudasama made her mark at the international competition, drawing praise for her poise and presence.',
-    image: '/images/nehal-editorial-8.jpg',
+    image: '/images/nehal-editorial-10.jpg',
     link: '#',
     linkText: 'Read on Hindustan Times'
   },
@@ -38,7 +38,7 @@ const pressItems = [
     date: '2018',
     headline: '"There\'s no substitute to hardwork" — Nehal Chudasama',
     summary: 'In an exclusive profile, Nehal shares the philosophy that drove her from Mumbai to the Miss Universe stage and beyond.',
-    image: '/images/nehal-editorial-2.jpg',
+    image: '/images/nehal-editorial-12.jpg',
     link: '#',
     linkText: 'Read on ETimes'
   },
