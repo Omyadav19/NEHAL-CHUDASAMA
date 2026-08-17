@@ -9,7 +9,7 @@ const REAL_PHOTOS = {
   hero:     '/images/nehal-editorial-7.jpg',
   portrait: '/images/nehal-editorial-9.jpg',
   stage:    '/images/nehal-editorial-4.jpg',
-  cropped:  '/images/nehal-editorial-10.jpg',
+  cropped:  '/images/nehal-editorial-14.png',
 };
 
 export function renderHome(container) {

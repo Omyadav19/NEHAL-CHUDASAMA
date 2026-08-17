@@ -6,7 +6,7 @@ import { initScrollAnimations, killScrollTriggers } from '../animations.js';
 import { updateActiveLink } from '../nav.js';
 
 const REAL = {
-  closeup: '/images/nehal-editorial-1.jpg',
+  closeup: '/images/nehal-editorial-14.png',
   cropped: '/images/nehal-editorial-7.jpg',
   stage:   '/images/nehal-editorial-4.jpg',
 };

@@ -669,51 +669,11 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 /* ============================================================
    ABOUT PAGE
    ============================================================ */
-/* About Hero Split Design */
 .about-hero {
-  display: grid;
-  grid-template-columns: 1fr 1.2fr;
-  height: 75vh;
-  min-height: 520px;
   background: var(--clr-ivory);
-  position: relative;
-}
-
-.about-hero-left {
-  position: relative;
-  overflow: hidden;
-  height: 100%;
-}
-
-.about-hero-left img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center top;
-}
-
-.about-hero-right {
-  padding: calc(var(--nav-height) + 1.5rem) clamp(1.5rem, 5vw, 5rem) var(--space-md);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  z-index: 2;
-  background: var(--clr-ivory);
-}
-
-@media (max-width: 1024px) {
-  .about-hero {
-    grid-template-columns: 1fr;
-    height: auto;
-    min-height: 100svh;
-  }
-  .about-hero-left {
-    height: 55vh;
-    order: -1;
-  }
-  .about-hero-right {
-    padding: var(--space-md) clamp(1.5rem, 5vw, 5rem) var(--space-lg);
-  }
+  padding-top: calc(var(--nav-height) + 4.5rem);
+  padding-bottom: var(--space-lg);
+  border-bottom: 1px solid var(--clr-ivory-3);
 }
 
 .facts-grid {
@@ -874,11 +834,8 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
    JOURNEY PAGE
    ============================================================ */
 .journey-hero {
-  height: 60vh;
-  min-height: 400px;
   background: var(--clr-ivory);
-  display: flex;
-  align-items: flex-end;
+  padding-top: calc(var(--nav-height) + 4.5rem);
   padding-bottom: var(--space-lg);
   border-bottom: 1px solid var(--clr-ivory-3);
 }
@@ -1009,12 +966,10 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
    GALLERY PAGE
    ============================================================ */
 .gallery-hero {
-  height: 50vh;
-  min-height: 350px;
   background: var(--clr-ivory);
-  display: flex;
-  align-items: flex-end;
+  padding-top: calc(var(--nav-height) + 4.5rem);
   padding-bottom: var(--space-lg);
+  border-bottom: 1px solid var(--clr-ivory-3);
 }
 
 .gallery-filter {
@@ -1158,12 +1113,10 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
    PRESS PAGE
    ============================================================ */
 .press-hero {
-  height: 50vh;
-  min-height: 350px;
   background: var(--clr-ivory);
-  display: flex;
-  align-items: flex-end;
+  padding-top: calc(var(--nav-height) + 4.5rem);
   padding-bottom: var(--space-lg);
+  border-bottom: 1px solid var(--clr-ivory-3);
 }
 
 .press-grid {

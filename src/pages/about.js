@@ -18,36 +18,50 @@ export function renderAbout(container) {
   container.innerHTML = `
 
   <!-- ABOUT HERO -->
-  <section class="about-hero" aria-label="About hero">
-    <div class="about-hero-left">
-      <img
-        src="${REAL.closeup}"
-        alt="Nehal Chudasama — Portrait closeup"
-        fetchpriority="high"
-        loading="eager"
-      />
+  <section class="about-hero" aria-label="About">
+    <div class="container">
+      <span class="eyebrow reveal" style="color:var(--clr-gold);">THE WOMAN BEHIND THE SPOTLIGHT</span>
+      <span class="gold-line reveal"></span>
+      <h1 class="display-1 reveal" style="color:var(--clr-dark);">MORE THAN<br>THE CROWN.</h1>
     </div>
-    <div class="about-hero-right">
-      <div class="hero-eyebrow" style="margin-bottom: 1.5rem;">
-        <span class="eyebrow" style="color:var(--clr-gold);">THE WOMAN BEHIND THE SPOTLIGHT</span>
-      </div>
-      <h1 class="display-1" style="font-size: clamp(2.5rem, 5.5vw, 4.4rem); line-height: 0.95; color: var(--clr-dark); margin-bottom: 1.5rem;">
-        <span class="hero-title"><span>MORE THAN</span></span>
-        <span class="hero-title"><span style="color:rgba(17,17,17,0.35);">THE CROWN.</span></span>
-      </h1>
-      <p class="editorial-body" style="max-width: 550px; font-size: clamp(1rem, 1.4vw, 1.15rem); color: var(--clr-mid); line-height: 1.7; text-align: left; margin-bottom: 2rem;">
-        Beyond the glamour of the stage lies a story of relentless dedication, discipline, and vision. Nehal Chudasama's path is defined not just by the titles she won, but by the barrier-breaking journey she continues to lead.
-      </p>
-      
-      <!-- Highlights Grid (Content enhancement) -->
-      <div style="display: flex; gap: 2.5rem; margin-top: 1.5rem; border-top: 1px solid var(--clr-ivory-2); padding-top: 1.5rem;">
-        <div>
-          <span class="eyebrow" style="font-size: 0.52rem; color: var(--clr-gold); display: block; margin-bottom: 0.25rem;">CROWNED</span>
-          <span style="font-family: var(--font-serif); font-size: 1.15rem; color: var(--clr-dark); font-weight: 300;">Miss Diva Universe 2018</span>
+  </section>
+
+  <!-- OVERVIEW SECTION WITH IMAGE -->
+  <section style="padding:var(--space-xl) 0;background:var(--clr-white);" aria-label="Overview">
+    <div class="container">
+      <div class="about-editorial-inner">
+        <div class="reveal-left">
+          <div class="img-wrap" style="height:550px;">
+            <img
+              src="${REAL.closeup}"
+              alt="Nehal Chudasama — Portrait closeup"
+              loading="lazy"
+              style="object-position:center top;"
+            />
+          </div>
         </div>
-        <div>
-          <span class="eyebrow" style="font-size: 0.52rem; color: var(--clr-gold); display: block; margin-bottom: 0.25rem;">REPRESENTED</span>
-          <span style="font-family: var(--font-serif); font-size: 1.15rem; color: var(--clr-dark); font-weight: 300;">India at Miss Universe</span>
+        <div class="about-editorial-text">
+          <span class="section-num reveal">01 / OVERVIEW</span>
+          <h2 class="display-3 reveal" style="margin-bottom:1.5rem;color:var(--clr-dark);">BEYOND THE GLAMOUR</h2>
+          <span class="gold-line reveal"></span>
+          <p class="editorial-body reveal" style="margin-bottom:1.5rem;">
+            Beyond the glamour of the stage lies a story of relentless dedication, discipline, and vision. Nehal Chudasama's path is defined not just by the titles she won, but by the barrier-breaking journey she continues to lead.
+          </p>
+          <p class="body-text reveal" style="margin-bottom:2rem;">
+            As a representative of India on the international Miss Universe stage, Nehal has used her platform to advocate for fitness, athletics, and active lifestyles, inspiring a generation of young women to pursue their dreams with quiet certainty and discipline.
+          </p>
+
+          <!-- Highlights Grid (Content enhancement) -->
+          <div style="display: flex; gap: 2.5rem; border-top: 1px solid var(--clr-ivory-2); padding-top: 1.5rem;">
+            <div>
+              <span class="eyebrow" style="font-size: 0.52rem; color: var(--clr-gold); display: block; margin-bottom: 0.25rem;">CROWNED</span>
+              <span style="font-family: var(--font-serif); font-size: 1.15rem; color: var(--clr-dark); font-weight: 300;">Miss Diva Universe 2018</span>
+            </div>
+            <div>
+              <span class="eyebrow" style="font-size: 0.52rem; color: var(--clr-gold); display: block; margin-bottom: 0.25rem;">REPRESENTED</span>
+              <span style="font-family: var(--font-serif); font-size: 1.15rem; color: var(--clr-dark); font-weight: 300;">India at Miss Universe</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>

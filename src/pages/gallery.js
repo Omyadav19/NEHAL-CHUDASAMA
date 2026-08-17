@@ -20,7 +20,6 @@ const galleryItems = [
   { src: '/images/nehal-editorial-11.png', alt: 'Nehal Chudasama — Miss Diva Red Carpet',         category: 'red-carpet',     title: 'Miss Diva Red Carpet' },
   { src: '/images/nehal-editorial-12.jpg', alt: 'Nehal Chudasama — Coronation Ceremony',           category: 'pageant',        title: 'Coronation Ceremony' },
   { src: '/images/nehal-editorial-13.png', alt: 'Nehal Chudasama — Miss Universe Portrait',       category: 'pageant',        title: 'Miss Universe Portrait' },
-  { src: '/images/nehal-editorial-14.png', alt: 'Nehal Chudasama — Portrait closeup with crown',  category: 'editorial',      title: 'Crown Editorial Portrait' },
 ];
 
 const categories = [
