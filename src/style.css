@@ -1246,40 +1246,170 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 /* ============================================================
    RESPONSIVE
    ============================================================ */
+/* ============================================================
+   RESPONSIVE — 1024px (Tablet)
+   ============================================================ */
 @media (max-width: 1024px) {
   .nav-links { display: none; }
   .nav-hamburger { display: flex; }
+
+  /* Home */
   .home-intro-inner { grid-template-columns: 1fr; }
-  .milestones-grid { grid-template-columns: 1fr; }
-  .chapter { grid-template-columns: 1fr; }
+  .milestones-grid { grid-template-columns: 1fr 1fr; }
+
+  /* Journey chapters */
+  .chapter { grid-template-columns: 1fr; gap: 2rem; }
+  .chapter-img { height: 380px; }
   .chapter--reverse .chapter-text { order: 0; }
   .chapter--reverse .chapter-img { order: 1; }
-  .about-editorial-inner { grid-template-columns: 1fr; }
+
+  /* About */
+  .about-editorial-inner { grid-template-columns: 1fr; gap: 2.5rem; }
   .facts-grid { grid-template-columns: 1fr 1fr; }
   .interests-grid { grid-template-columns: 1fr 1fr; }
-  .trait-item { grid-template-columns: 1fr; }
+
+  /* Reality */
+  .trait-item { grid-template-columns: 1fr; gap: 2rem; }
   .trait-item--reverse .trait-visual { order: 0; }
   .trait-item--reverse .trait-content { order: 1; }
+
+  /* Gallery */
   .gallery-masonry { columns: 2; }
+  .gallery-preview-grid { grid-template-columns: 1fr 1fr; }
+  .gallery-preview-item { grid-column: auto !important; grid-row: auto !important; min-height: 220px !important; }
+
+  /* Press */
   .press-grid { grid-template-columns: 1fr; }
   .press-item { grid-template-columns: 1fr; }
   .press-item-img { height: 240px; }
-  .gallery-preview-grid { grid-template-columns: 1fr 1fr; }
-  .gallery-preview-item { grid-column: auto !important; grid-row: auto !important; min-height: 220px !important; }
 }
 
+/* ============================================================
+   RESPONSIVE — 768px (Mobile Landscape)
+   ============================================================ */
+@media (max-width: 768px) {
+  :root {
+    --space-xl: 5rem;
+    --space-2xl: 7rem;
+    --nav-height: 70px;
+  }
+
+  /* Container tighter on mobile */
+  .container { padding-inline: clamp(1.25rem, 5vw, 2rem); }
+
+  /* Hero — single column, centre-aligned */
+  .hero { padding: calc(var(--nav-height) + 3rem) 0 4rem; }
+  .hero-left { padding-inline: 1.25rem; }
+  .hero-ctas { flex-direction: column; align-items: center; gap: 1rem; }
+  .hero-ctas .btn { width: 100%; justify-content: center; }
+
+  /* Hero detail grid — single column on small screens */
+  .hero-details-grid { grid-template-columns: 1fr 1fr !important; gap: 1rem 1.5rem !important; }
+
+  /* Section heroes — more compact */
+  .journey-hero,
+  .gallery-hero,
+  .press-hero,
+  .about-hero {
+    padding-top: calc(var(--nav-height) + 2.5rem);
+    padding-bottom: 3rem;
+  }
+
+  /* Journey chapters */
+  .chapter { padding: 3.5rem 0; gap: 1.75rem; }
+  .chapter-img { height: 280px; }
+  .chapter-title { font-size: clamp(2rem, 10vw, 3.5rem); }
+
+  /* About overview image */
+  .about-editorial-inner .img-wrap { height: 320px !important; }
+
+  /* Facts grid */
+  .facts-grid { grid-template-columns: 1fr 1fr; }
+  .fact-item { padding: 2rem 1.25rem; }
+
+  /* Interests */
+  .interests-grid { grid-template-columns: 1fr 1fr; gap: 14px; }
+  .interest-item { padding: 2rem 1.25rem 1.75rem; }
+
+  /* Quote section */
+  .quote-mark { font-size: 5rem; }
+  .quote-text { font-size: clamp(1.3rem, 4vw, 2rem); }
+
+  /* Milestones */
+  .milestones-grid { grid-template-columns: 1fr 1fr; }
+  .milestone-item { padding: 2.5rem 1.25rem; }
+
+  /* Gallery */
+  .gallery-masonry { columns: 2; gap: 10px; }
+  .gallery-preview-grid { grid-template-columns: 1fr 1fr; }
+
+  /* Press */
+  .press-item-img { height: 200px; }
+
+  /* Scroll indicator */
+  .scroll-indicator { right: 1.25rem; bottom: 1.5rem; }
+
+  /* Footer */
+  .footer-inner { flex-direction: column; text-align: center; gap: 1.5rem; }
+  .footer-links { flex-wrap: wrap; justify-content: center; }
+
+  /* Marquee */
+  .marquee-item { font-size: clamp(1.8rem, 6vw, 3rem); }
+}
+
+/* ============================================================
+   RESPONSIVE — 600px (Mobile Portrait)
+   ============================================================ */
 @media (max-width: 600px) {
-  :root { --space-xl: 5rem; --space-2xl: 7rem; }
+  :root { --space-xl: 4rem; --space-2xl: 6rem; }
+
+  /* Single column for most grids */
   .gallery-masonry { columns: 1; }
   .gallery-preview-grid { grid-template-columns: 1fr; }
   .facts-grid { grid-template-columns: 1fr; }
   .fact-item { border-right: none; border-bottom: 1px solid var(--clr-ivory-3); }
   .fact-item:last-child { border-bottom: none; }
   .interests-grid { grid-template-columns: 1fr; }
+  .milestones-grid { grid-template-columns: 1fr; }
+  .hero-details-grid { grid-template-columns: 1fr !important; gap: 1rem !important; }
+
+  /* Chapter images */
+  .chapter-img { height: 240px; }
+
+  /* About overview image */
+  .about-editorial-inner .img-wrap { height: 260px !important; }
+
+  /* Buttons */
   .hero-ctas { flex-direction: column; }
-  .footer-inner { flex-direction: column; text-align: center; }
+  .hero-ctas .btn { width: 100%; text-align: center; justify-content: center; }
+
+  /* Milestones */
   .milestone-item { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.08); }
   .milestone-item:last-child { border-bottom: none; }
+
+  /* Footer */
+  .footer-inner { flex-direction: column; text-align: center; }
+}
+
+/* ============================================================
+   RESPONSIVE — 480px (Small phones)
+   ============================================================ */
+@media (max-width: 480px) {
+  :root { --nav-height: 64px; }
+
+  /* Typography scale down */
+  .display-1 { font-size: clamp(3rem, 13vw, 5rem); }
+  .display-2 { font-size: clamp(2rem, 10vw, 3.5rem); }
+  .display-3 { font-size: clamp(1.5rem, 7vw, 2.5rem); }
+
+  /* Even more compact chapter images */
+  .chapter-img { height: 200px; }
+
+  /* Gallery single column */
+  .gallery-masonry { columns: 1; }
+
+  /* Interests grid — single column */
+  .interests-grid { grid-template-columns: 1fr; }
 }
 
 /* ============================================================

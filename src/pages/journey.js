@@ -115,7 +115,7 @@ export function renderJourney(container) {
         </div>
         <div class="chapter-img reveal-right">
           <img
-            src="${REAL.cropped}"
+            src="${REAL.closeup}"
             alt="Nehal Chudasama — entertainment and personality (Photo: Wikimedia Commons, CC-BY-SA)"
             loading="lazy"
             style="object-position:center top;"
